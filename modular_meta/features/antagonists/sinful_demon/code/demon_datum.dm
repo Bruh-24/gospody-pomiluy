@@ -22,6 +22,7 @@
 		/datum/action/cooldown/spell/shapeshift/demon,
 		/datum/action/cooldown/spell/shapeshift/demon/gluttony,
 		/datum/action/cooldown/spell/shapeshift/demon/wrath,
+		/datum/action/cooldown/spell/shapeshift/demon/sloth,
 		/datum/action/cooldown/spell/forcewall/gluttony,
 		/datum/action/cooldown/spell/conjure/summon_greedslots,
 		/datum/action/cooldown/spell/pointed/ignite,
@@ -53,7 +54,7 @@
 					L.visible_message(span_warning("[L]'s skin begins to heat up and darken!"), span_danger("Your flesh begins to sear..."))
 				if(60 to 85)
 					L.visible_message(span_warning("[L]'s skin begins to melt apart!"), span_danger("Your skin is melting!"), "You hear sizzling.")
-			L.adjustFireLoss(5)
+			L.adjust_fire_loss(5)
 		else if(L.health < 60)
 			if(!L.on_fire)
 				L.visible_message(span_warning("[L] lights up in a holy blaze!"), span_danger("Your skin catches fire!"))

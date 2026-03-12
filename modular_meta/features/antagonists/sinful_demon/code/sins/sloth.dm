@@ -1,8 +1,8 @@
 /datum/action/cooldown/spell/shapeshift/demon/sloth //emergency get out of jail card, but better.
 	name = "Sloth Demon Form"
-	possible_shapes = list(/mob/living/simple_animal/lesserdemon/sloth)
+	possible_shapes = list(/mob/living/basic/lesserdemon/sloth)
 
-/mob/living/simple_animal/lesserdemon/sloth
+/mob/living/basic/lesserdemon/sloth
 	name = "sloth demon"
 	real_name = "sloth demon"
 	desc = "*yawns* aaw.. battle? Ahhh no.. i.. go.. to... to.. sleeep.."
@@ -47,7 +47,7 @@
 	playsound(caster, 'sound/effects/magic/demon_attack1.ogg', 75, TRUE)
 	victim.adjust_eye_blur(20) //huge array of relatively minor effects.
 	victim.Stun(3 SECONDS)
-	victim.adjustOrganLoss(ORGAN_SLOT_EYES, 10)
+	victim.adjust_organ_loss(ORGAN_SLOT_EYES, 10)
 	victim.visible_message(span_danger("[victim] yawns and want close eyes!"))
 	victim.emote("yawn")
 	to_chat(victim, span_warning("You want to sleep!"))

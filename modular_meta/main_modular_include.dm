@@ -30,6 +30,7 @@
 #include "features\more_cell_interactions\includes.dm"
 #include "features\makeshift_grenade_trap\includes.dm"
 #include "features\makeshift_tools\includes.dm"
+#include "features\martials\includes.dm"
 #include "features\parts_tier_5\includes.dm"
 #include "features\copytech\includes.dm"
 #include "features\cargo_extended\includes.dm"
@@ -41,6 +42,7 @@
 #include "features\soundtrack_modpack\includes.dm"
 #include "features\novichok\includes.dm"
 #include "features\jukeboxes_to_bartender\includes.dm"
+#include "features\bot_topic\includes.dm"
 
 /* --- Reverts --- */
 
@@ -50,12 +52,14 @@
 #include "reverts\colossus\includes.dm"
 #include "reverts\glasses_protect\includes.dm"
 #include "reverts\hooch\includes.dm"
+#include "reverts\keybinds\includes.dm"
 #include "reverts\nanomed\includes.dm"
 #include "reverts\satchels_back\includes.dm"
 
 /* --- Tweaks --- */
 
 #include "tweaks\antagonists_balance\includes.dm"
+#include "tweaks\balance\includes.dm"
 #include "tweaks\better_ui\includes.dm"
 #include "tweaks\del_required_experiments\includes.dm"
 #include "tweaks\fonts\includes.dm"
